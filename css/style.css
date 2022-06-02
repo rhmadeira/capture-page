@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(16, 16, 16);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 200px;
+  display: block;
+}
+
+.container-title{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  background: #48c5ce;
+  padding: 10px;
+}
+
+.container-form{
+  padding: 20px;
+  background-image: url(../images/people.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.form {
+  max-width: 230px;
+  float: right;
+  background-color: #ffffffBB;
+  padding: 20px;
+}
+
+.form h2 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.form p {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+input[type="submit"]{
+  color: #ffffff;
+  background-color: #48c5ce;
+  font-weight: bold;
+}
+
+.picture{
+  width: 160px;
+  grid-column: 2/3;
+  justify-self: end;
+}
+
+.description{
+  color: #ffffff;
+  margin-left: 20px;
+  grid-column: 3/4;
+  place-self: end;
+  text-align: left;
+}
+.description h3{
+  margin-bottom: 10px;
+}
+.description p{
+  margin-bottom: 10px;
+
+}
+.container-footer{
+  display: grid;
+  grid-template-columns: 1fr 160px 400px 1fr;
+  justify-items: center;
+  background-color: rgb(54, 54, 54);
+  padding: 60px 0;
+}
+
+@media (max-width: 600px){
+  .title h1{
+    font-size: 1.2rem;
+  }
+  .container-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .container-footer{
+    grid-template-columns: 1fr;
+    padding: 20px 30px;
+  }
+  .picture{
+    grid-column: 1;
+    justify-self: center;
+  }
+  .description{
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
